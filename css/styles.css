@@ -1,0 +1,269 @@
+/* Top Navigation Bar */
+.navigation-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: red;*/
+}
+
+.navigation-item {
+    float: left;
+    /*margin-bottom: 7px;*/
+    /*Font size should be on rem/em*/
+    color: #ffffff;
+}
+
+.navigation-link {
+    padding: 10px 0 16px 0;
+    margin-right: 16px;
+    font-size: 16px;
+    display: block;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+}
+
+.navigation-link:hover {
+    border-top: 5px solid #54d154;
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+.navigation-title {
+    font-size: 24px;
+}
+
+.navigation-search {
+    float: right;
+    padding: 4px 0 4px 0;
+}
+
+/* Middle Navigation Section */
+.middle-title {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 30px 0;
+}
+
+.middle-button {
+    padding: 15px 27px;
+    text-transform: uppercase;
+}
+
+.bottom-button {
+    padding: 6px 15px 7px 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Services Section */
+/* This will be common for all sections */
+.common-header-title {
+    position: relative;
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    /*margin-bottom: 13px;*/
+    /*float: left;*/
+    /*clear: left;*/
+}
+
+.common-header-title::after {
+    content: "";
+    position: absolute;
+    border-top: 2px solid black;
+    left: 48%;
+    bottom: 0;
+    top: 15px;
+    width: 43px;
+    height: 0;
+    margin-top: 15px;
+    /*margin-bottom: 10px;*/
+}
+
+.common-header-description {
+    margin-top: 10px;
+}
+
+.service-image {
+    max-width: 100%;
+}
+
+.service-title {
+    margin: 27px 0 18px 0;
+}
+
+.service-description {
+    margin-bottom: 27px;
+}
+
+.learn-more-button {
+    padding: 9px 19px;
+    /*background-color: red;*/
+}
+
+/* PORTFOLIO SECTION */
+.group-button {
+    float: left;
+    cursor: pointer;
+    padding: 10px 10px;
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+.group-button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+.portfolio-image {
+    max-width: 100%;
+    /*margin: 0 15px;*/
+    margin: 0 auto;
+    display: block;
+
+}
+
+.no-margin {
+    margin-right: 0;
+}
+
+
+.more-portfolio-button {
+    font-size: 16px;
+    padding: 14px 18px;
+    background-color: green;
+}
+
+
+/* TESTIMONIALS */
+
+
+
+
+/*HAPPY CLIENTS*/
+.happy-client-image {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+}
+
+.vertical-center {
+    /*line-height: 53px;*/
+    margin-top: 8px;
+}
+
+.vertical-center-2 {
+    margin-top: 25px;
+}
+
+
+/*.center-apple {*/
+/*    margin-left: 40px;*/
+/*}*/
+
+/*MEET THE TEAM*/
+.border-column {
+    border-right: 2px solid black;
+}
+
+.team-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.social-icons {
+    /*float: left;*/
+    /*margin: 0 auto;*/
+}
+
+.beryllium {
+    margin: 0 7px;
+}
+
+/* WORK WITH US BUTTON */
+.with-us-button {
+    padding: 13px 24px;
+    background-color: green;
+    text-transform: uppercase;
+}
+
+
+/*AS SEEN ON*/
+.seen-image {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* FOOTER ABOUT */
+.pills-on-footer {
+    margin-top: 30px;
+}
+
+/*FOOTER RECENT POSTS*/
+.recent-post-image {
+    max-width: 100%;
+}
+
+.recent-description {
+    line-height: 1.5;
+}
+
+.recent-badge {
+    padding: 0 7px 0 7px;
+    text-transform: uppercase;
+}
+
+/*use psudo selectors*/
+.badge-color-m {
+    background-color: #54d154;
+}
+
+.badge-color-u {
+    background-color: yellow;
+}
+
+.badge-color-p {
+    background-color: lightblue;
+}
+
+.badge-color-b {
+    background-color: orange;
+}
+
+/* CONTACT FORM */
+.contact-input {
+    width: 100%;
+    margin-bottom: 2px;
+    padding: 5px 7.5px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.contact-message {
+    width: 100%;
+    padding: 5px 7.5px;
+    border: none;
+    outline: none;
+}
+
+.form-submit-button {
+    width: 100%;
+    background-color: #54d154;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+
+
