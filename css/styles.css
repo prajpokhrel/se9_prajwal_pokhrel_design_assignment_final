@@ -1,4 +1,4 @@
-/* Top Navigation Bar */
+ /*Top Navigation Bar */
 .navigation-items {
     list-style-type: none;
     margin: 0;
@@ -11,6 +11,8 @@
     float: left;
     /*margin-bottom: 7px;*/
     /*Font size should be on rem/em*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     color: #ffffff;
 }
 
@@ -40,6 +42,9 @@
     padding: 4px 0 4px 10px;
     border-radius: 50px;
     /*max-width: 100%;*/
+    opacity: 0.8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     outline: none;
     border: none;
 }
@@ -53,7 +58,6 @@
 .hamburger {
     font-size: 20px;
     cursor: pointer;
-    float: right;
     color: #FFFFFF;
 }
 
@@ -65,19 +69,31 @@
 .middle-title {
     font-size: 55px;
     font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
     line-height: 1;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
 }
 
 .middle-button {
-    padding: 15px 27px;
+    padding: 10px 27px;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    border-radius: 50px;
+    background-color: #54d154;
+    color: #FFFFFF;
 }
 
 .bottom-button {
     padding: 6px 15px 7px 10px;
     font-size: 16px;
     font-weight: 300;
+    opacity: 0.7;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Services Section */
@@ -88,6 +104,8 @@
     font-weight: 300;
     letter-spacing: 3.2px;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #828181;
     /*margin-bottom: 13px;*/
     /*float: left;*/
     /*clear: left;*/
@@ -103,11 +121,15 @@
     width: 43px;
     height: 0;
     margin-top: 15px;
+    background-color: #828181;
     /*margin-bottom: 10px;*/
 }
 
 .common-header-description {
     margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #b7b3b3;
 }
 
 .service-image {
@@ -116,28 +138,73 @@
 
 .service-title {
     margin: 27px 0 18px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #828181;
 }
 
 .service-description {
-    margin-bottom: 27px;
+    margin-bottom: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #828181;
 }
 
 .learn-more-button {
-    padding: 9px 19px;
+    padding: 5px 15px;
+    background-color: #54d154;
+    color: #ffffff;
+    border-radius: 50px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
     /*background-color: red;*/
 }
 
 /* PORTFOLIO SECTION */
+.portfolio-specific {
+    color: #2b9b2b;
+}
+
+.portfolio-specific1 {
+    color: #207b20;
+}
+
 .group-button {
     float: left;
     cursor: pointer;
-    padding: 10px 10px;
-    border: 1px solid green;
+    padding: 5px 17px;
+    border: 1px solid #2b9b2b;
+    font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    color: #2b9b2b;
+    cursor: pointer;
+    /*border-radius: 50px;*/
+}
+
+.grp-btn-active {
+    background-color: #2b9b2b;
+    color: #FFFFFF;
 }
 
 .group-button:not(:last-child) {
     border-right: none; /* Prevent double borders */
+}
+
+.round-border {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+ .round-border1 {
+     border-top-right-radius: 50px;
+     border-bottom-right-radius: 50px;
+ }
+
+.group-button:hover {
+    background-color: #2b9b2b;
+    color: #FFFFFF;
 }
 
 .portfolio-image {
@@ -154,15 +221,19 @@
 
 
 .more-portfolio-button {
-    font-size: 16px;
-    padding: 14px 18px;
-    background-color: green;
+    /*font-size: 16px;*/
+    padding: 10px 15px;
+    background-color: #2b9b2b;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 
 /* TESTIMONIALS */
 /* ITS CODE ON SEPARATE FILE */
-
 
 /*HAPPY CLIENTS*/
 .happy-client-image {
@@ -181,6 +252,21 @@
 }
 
 
+.more-clients-button {
+    /*font-size: 16px;*/
+    padding: 12px 32px;
+    background-color: #dddcdc;
+    color: #a59d9d;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.arrow2 {
+    margin-left: 20px;
+}
+
 
 /*.center-apple {*/
 /*    margin-left: 40px;*/
@@ -196,9 +282,16 @@
     display: block;
 }
 
+.teammate-name {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .social-icons {
     /*float: left;*/
     /*margin: 0 auto;*/
+    cursor: pointer;
 }
 
 .beryllium {
@@ -208,10 +301,26 @@
 /* WORK WITH US BUTTON */
 .with-us-button {
     padding: 13px 24px;
-    background-color: green;
+    background-color: #54d154;
+    color: #FFFFFF;
+    border-radius: 50px;
     text-transform: uppercase;
+    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.1);
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
 }
 
+.recent-description {
+    font-family: 'Montserrat', sans-serif;
+    color: #cccccc;
+    font-size: 16px;
+}
+
+.contact-address {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #cccccc;
+}
 
 /*AS SEEN ON*/
 .seen-image {
@@ -238,11 +347,15 @@
 
 .recent-description {
     line-height: 1.5;
+    font-size: 15px;
 }
 
 .recent-badge {
-    padding: 0 7px 0 7px;
+    padding: 4px 7px 4px 7px;
     text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*use psudo selectors*/
@@ -251,45 +364,60 @@
 }
 
 .badge-color-u {
-    background-color: yellow;
+    background-color: #ffba00;
 }
 
 .badge-color-p {
-    background-color: lightblue;
+    background-color: #089dea;
 }
 
 .badge-color-b {
-    background-color: orange;
+    background-color: #f34d04;
 }
 
 /* CONTACT FORM */
 .contact-input {
     width: 100%;
     margin-bottom: 2px;
-    padding: 5px 7.5px;
+    padding: 10px 14px;
     border: none;
     outline: none;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    background-color: #444444;
+    color: #777777;
+}
+
+.no-border-radius {
+    border-radius: 0;
 }
 
 .contact-message {
     width: 100%;
-    padding: 5px 7.5px;
+    padding: 10px 14px;
     border: none;
     outline: none;
+    color: #777777;
+    background-color: #444444;
 }
 
 .form-submit-button {
     width: 100%;
-    background-color: #54d154;
+    background-color: #2b9b2b;
+    font-size: 14px;
+    color: #FFFFFF;
     text-align: center;
     border: none;
     outline: none;
     padding: 10px 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
 
+.footer-copyright-text {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
 }
 
 

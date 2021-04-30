@@ -19,18 +19,26 @@
     left: 0;
 }
 
+.testimonial-message {
+    color: #444444;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
 .user-detail-box {
     /*float: left;*/
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    /*padding-left: 10%;*/
+    display: block;
     width: 100%;
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .user-image-box {
     height: 42px;
     width: 42px;
     border-radius: 100%;
-    border: 2px solid black;
+    border: 2px solid #e1e1e1;
     padding: 2px 0;
     float: left;
 }
@@ -45,6 +53,19 @@
 .user-name-box {
     line-height: 1.2;
     margin-left: 50px;
+}
+
+.user-name {
+    color: #444444;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user-position {
+    font-size: 16px;
+    color: #cccccc;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 

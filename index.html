@@ -10,8 +10,11 @@
         <link rel="stylesheet" href="css/layout.css" type="text/css">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/grid.css" type="text/css">
-<!--        <link rel="stylesheet" href="css/navigation-small-devices.css" type="text/css">-->
+        <link rel="stylesheet" href="css/navigation-small-devices.css" type="text/css">
         <link rel="stylesheet" href="css/testimonials.css" type="text/css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
         <title>Switch - Prajwal Pokhrel - SE 9</title>
     </head>
@@ -23,14 +26,26 @@
                 <div class="landing-page-container">
                     <!-- TOP NAVIGATION -->
                     <div class="row top-navigation">
-                        <div class="col-s-5 col-l-5 col-xl-5 col-5 navigation-content">
-                            <ul class="navigation-items">
-                                <li class="navigation-item"><a class="navigation-link" href="#home">Home</a></li>
-                                <li class="navigation-item"><a class="navigation-link" href="#what">What we do?</a></li>
-                                <li class="navigation-item"><a class="navigation-link" href="#testimonial">Testimonial</a></li>
-                                <li class="navigation-item"><a class="navigation-link" href="#contact">Contact Us</a></li>
-                            </ul>
+                        <div class="overlay" id="myNav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="col-s-5 col-l-5 col-xl-5 col-5 navigation-content">
+                                <ul class="navigation-items">
+                                    <li class="navigation-item"><a class="navigation-link" href="#home">Home</a></li>
+                                    <li class="navigation-item"><a class="navigation-link" href="#what">What we do?</a></li>
+                                    <li class="navigation-item"><a class="navigation-link" href="#testimonial">Testimonial</a></li>
+                                    <li class="navigation-item"><a class="navigation-link" href="#contact">Contact Us</a></li>
+                                </ul>
+                            </div>
                         </div>
+
+<!--                        <div class="display-navigation col-s-5 col-l-5 col-xl-5 col-5 navigation-content">-->
+<!--                            <ul class="navigation-items">-->
+<!--                                <li class="navigation-item"><a class="navigation-link" href="#home">Home</a></li>-->
+<!--                                <li class="navigation-item"><a class="navigation-link" href="#what">What we do?</a></li>-->
+<!--                                <li class="navigation-item"><a class="navigation-link" href="#testimonial">Testimonial</a></li>-->
+<!--                                <li class="navigation-item"><a class="navigation-link" href="#contact">Contact Us</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
                         <div class="col-s-2 col-l-2 col-xl-2 col-2 navigation-title-container">
                             <span class="navigation-title">
                                 <img src="images/title.png" alt="title"  />
@@ -40,9 +55,7 @@
                             <img class="search-above-input" src="images/mag.png" alt="search" />
                             <input class="navigation-search" type="text" placeholder="Search..." />
                         </div>
-<!--                        <div class="col-sm-1 hamburger-container">-->
-<!--                            <span class="hamburger" onclick="openNav()">&#9776;</span>-->
-<!--                        </div>-->
+                        <span class="hamburger" onclick="openNav()">&#9776;</span>
                     </div>
 
                     <!-- MIDDLE CONTENTS -->
@@ -115,17 +128,17 @@
             <section class="section-portfolio">
                 <div class="row common-section-header">
                     <div class="col-sm-12 col-12 common-header-container">
-                        <h2 class="common-header-title">Our Latest Work</h2>
-                        <p class="common-header-description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+                        <h2 class="common-header-title portfolio-specific1">Our Latest Work</h2>
+                        <p class="common-header-description portfolio-specific">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-12 col-12 portfolio-button-group">
                         <div class="row centered-group-button">
-                            <button class="group-button">Photography</button>
+                            <button class="group-button grp-btn-active round-border">Photography</button>
                             <button class="group-button">Design</button>
-                            <button class="group-button">Print</button>
+                            <button class="group-button round-border1">Print</button>
                         </div>
                     </div>
                 </div>
@@ -205,14 +218,41 @@
                         </div>
 
                         <div class="testimonial-details fade-animation">
-
-                        </div>
-                        <div class="testimonial-details fade-animation">
-
-                            <div class="row">
-
+                            <div class="row testimonial-message-container">
+                                <span class="testimonial-message">
+                                    "This is the sample text that i have written to demo the testimonial slider."
+                                </span>
                             </div>
+                            <div class="row">
+                                <div class="user-detail-box">
+                                    <div class="user-image-box">
+                                        <img class="user-image" src="images/head.png" alt="head" />
+                                    </div>
+                                    <div class="user-name-box">
+                                        <span class="user-name">Mr. Prajwal Pokhrel</span><br>
+                                        <span class="user-position">CEO of Prajsha, Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="testimonial-details fade-animation">
+                            <div class="row testimonial-message-container">
+                                <span class="testimonial-message">
+                                    "This is the cool template that i got to do. I hope you like it."
+                                </span>
+                            </div>
+                            <div class="row">
+                                <div class="user-detail-box">
+                                    <div class="user-image-box">
+                                        <img class="user-image" src="images/head.png" alt="head" />
+                                    </div>
+                                    <div class="user-name-box">
+                                        <span class="user-name">Mr. Biplove Pokhrel</span><br>
+                                        <span class="user-position">CEO of Bipsha, Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <a onclick="plusSlides(-1)" class="testimonial-left-arrow">
                             <img src="images/up_arrow28.png" alt="side arrow" />
@@ -233,38 +273,38 @@
                 </div>
 
                 <div class="row happy-client-container1">
-                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image" src="images/google.png" alt="google" />
                     </div>
-                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image vertical-center" src="images/yahoo.png" alt="yahoo" />
                     </div>
-                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image vertical-center" src="images/microsot.png" alt="microsoft" />
                     </div>
-                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image" src="images/intel.png" alt="intel" />
                     </div>
                 </div>
 
                 <div class="row happy-client-container2">
-                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image vertical-center-2" src="images/qualcomm.png" alt="qualcom">
                     </div>
-                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image" src="images/cisco.png" alt="cisco">
                     </div>
-                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image center-apple" src="images/apple.png" alt="apple">
                     </div>
-                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image vertical-center-2" src="images/asus.png" alt="asus">
                     </div>
                 </div>
 
                 <div class="row more-portfolio-container">
-                    <a href="#more" class="more-portfolio-button">See all client
-                        <img src="images/arrow2.png" alt="arrow2" />
+                    <a href="#more" class="more-clients-button">See all client
+                        <img class="arrow2" src="images/arrow2.png" alt="arrow2" />
                     </a>
                 </div>
             </section>
@@ -272,8 +312,8 @@
             <section class="section-meet-team">
                 <div class="row common-section-header">
                     <div class="col-sm-12 col-12 common-header-container">
-                        <h2 class="common-header-title">Meet the team</h2>
-                        <p class="common-header-description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+                        <h2 class="common-header-title portfolio-specific1">Meet the team</h2>
+                        <p class="common-header-description portfolio-specific">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
                     </div>
                 </div>
 
@@ -429,13 +469,12 @@
                 </div>
             </section>
 
-            <footer>
-
+            <footer class="footer-wrapper">
                 <div class="row about-us-wrapper">
                     <div class="col-sm-12 col-l-6 col-4 about-us-container">
                         <div class="row common-section-header">
                             <div class="col-sm-12 col-12 common-header-container">
-                                <h2 class="common-header-title">About us</h2>
+                                <h2 class="common-header-title footer-specific">About us</h2>
                             </div>
                         </div>
 
@@ -467,7 +506,7 @@
                     <div class="col-sm-12 col-l-6 col-4 recent-container">
                         <div class="row common-section-header">
                             <div class="col-sm-12 col-12 common-header-container">
-                                <h2 class="common-header-title">Recent Posts</h2>
+                                <h2 class="common-header-title footer-specific">Recent Posts</h2>
                             </div>
                         </div>
 
@@ -526,7 +565,7 @@
                     <div class="col-sm-12 col-4 contact-us">
                         <div class="row common-section-header">
                             <div class="col-sm-12 col-12 common-header-container">
-                                <h2 class="common-header-title">Contact Us</h2>
+                                <h2 class="common-header-title footer-specific">Contact Us</h2>
                             </div>
                         </div>
 
@@ -540,7 +579,7 @@
 
                         <div class="row contact-form">
                             <input class="contact-input top-radius" type="text" placeholder="Your Name.." required="required" />
-                            <input class="contact-input" type="email" placeholder="Your Email.." required="required" />
+                            <input class="contact-input no-border-radius" type="email" placeholder="Your Email.." required="required" />
                             <textarea class="contact-message" name="textarea" id="message" cols="30" rows="10" placeholder="You Message.."></textarea>
                             <button class="form-submit-button">SEND</button>
                         </div>
@@ -552,7 +591,7 @@
                 <div class="row seen-on-wrapper">
                     <div class="row common-section-header">
                         <div class="col-sm-12 col-12 common-header-container">
-                            <h2 class="common-header-title">As seen on</h2>
+                            <h2 class="common-header-title seen-on-specific">As seen on</h2>
                         </div>
                     </div>
 
@@ -575,7 +614,7 @@
 
                 <div class="row">
                     <div class="col-sm-12 col-12 footer-copyright">
-                        <span>made with &nbsp; <img src="images/heart.png" alt="heart"> &nbsp; by krisna :) </span>
+                        <span class="footer-copyright-text">made with &nbsp; <img src="images/heart.png" alt="heart"> &nbsp; by krisna :) </span>
                     </div>
                 </div>
             </footer>
