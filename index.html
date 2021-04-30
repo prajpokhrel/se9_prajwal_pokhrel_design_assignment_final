@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/layout.css" type="text/css">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/grid.css" type="text/css">
+<!--        <link rel="stylesheet" href="css/navigation-small-devices.css" type="text/css">-->
+        <link rel="stylesheet" href="css/testimonials.css" type="text/css">
 
         <title>Switch - Prajwal Pokhrel - SE 9</title>
     </head>
@@ -21,7 +23,7 @@
                 <div class="landing-page-container">
                     <!-- TOP NAVIGATION -->
                     <div class="row top-navigation">
-                        <div class="col-5">
+                        <div class="col-s-5 col-l-5 col-xl-5 col-5 navigation-content">
                             <ul class="navigation-items">
                                 <li class="navigation-item"><a class="navigation-link" href="#home">Home</a></li>
                                 <li class="navigation-item"><a class="navigation-link" href="#what">What we do?</a></li>
@@ -29,13 +31,18 @@
                                 <li class="navigation-item"><a class="navigation-link" href="#contact">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div class="col-2 navigation-title-container">
-                            <span class="navigation-title">Switch</span>
+                        <div class="col-s-2 col-l-2 col-xl-2 col-2 navigation-title-container">
+                            <span class="navigation-title">
+                                <img src="images/title.png" alt="title"  />
+                            </span>
                         </div>
-                        <div class="col-5 navigation-search-container">
-                            <!-- Add Search Icon inside it -->
+                        <div class="col-s-5 col-l-5 col-xl-5 col-5 navigation-search-container">
+                            <img class="search-above-input" src="images/mag.png" alt="search" />
                             <input class="navigation-search" type="text" placeholder="Search..." />
                         </div>
+<!--                        <div class="col-sm-1 hamburger-container">-->
+<!--                            <span class="hamburger" onclick="openNav()">&#9776;</span>-->
+<!--                        </div>-->
                     </div>
 
                     <!-- MIDDLE CONTENTS -->
@@ -46,7 +53,9 @@
                         </div>
                         <div class="col-12 bottom-button-container">
                             <!-- Button has image too -->
-                            <a href="#scroll" class="bottom-button">scroll down</a>
+                            <a href="#scroll" class="bottom-button">
+                                scroll down <img src="images/dropdown.png" alt="dropdown" />
+                            </a>
                         </div>
                     </div>
 
@@ -56,14 +65,14 @@
             <section class="section-services">
 
                 <div class="row common-section-header">
-                    <div class="col-12 common-header-container">
+                    <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title">What we do</h2>
                         <p class="common-header-description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
                     </div>
                 </div>
 
                 <div class="row services-container">
-                    <div class="col-4 single-services">
+                    <div class="col-sm-12 col-l-6 col-xl-4 col-4 single-services">
                         <div class="row">
                             <div class="service-image-container">
                                 <img class="service-image" src="images/camera.png" alt="camera" />
@@ -75,10 +84,10 @@
                             <a href="#learn" class="learn-more-button">Learn more</a>
                         </div>
                     </div>
-                    <div class="col-4 single-services">
+                    <div class="col-sm-12 col-l-6 col-xl-4 col-4 single-services">
                         <div class="row">
                             <div class="service-image-container">
-                                <img class="service-image" src="images/camera.png" alt="camera" />
+                                <img class="service-image" src="images/boost.png" alt="boost" />
                             </div>
                         </div>
                         <div class="row service-description-container">
@@ -87,10 +96,10 @@
                             <a href="#learn" class="learn-more-button">Learn more</a>
                         </div>
                     </div>
-                    <div class="col-4 single-services">
+                    <div class="col-sm-12 col-l-12 col-xl-4 col-4 single-services">
                         <div class="row">
                             <div class="service-image-container">
-                                <img class="service-image" src="images/camera.png" alt="camera" />
+                                <img class="service-image" src="images/bank.png" alt="bank" />
                             </div>
                         </div>
                         <div class="row service-description-container">
@@ -101,20 +110,19 @@
                     </div>
                 </div>
 
-
             </section>
 
             <section class="section-portfolio">
                 <div class="row common-section-header">
-                    <div class="col-12 common-header-container">
+                    <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title">Our Latest Work</h2>
                         <p class="common-header-description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-12 portfolio-button-group">
-                        <div class="centered-group-button">
+                    <div class="col-sm-12 col-12 portfolio-button-group">
+                        <div class="row centered-group-button">
                             <button class="group-button">Photography</button>
                             <button class="group-button">Design</button>
                             <button class="group-button">Print</button>
@@ -124,45 +132,36 @@
 
                 <div class="row portfolio-container">
                     <div class="portfolio-images">
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/scenry.png" alt="scenery">
                         </div>
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/kitchen.png" alt="kitchen">
                         </div>
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/dish.png" alt="dish">
                         </div>
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/cat.png" alt="cat">
                         </div>
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/code.png" alt="code">
                         </div>
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/glass.png" alt="glass">
                         </div>
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/noidea2.png" alt="no idea">
                         </div>
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/road.png" alt="road">
                         </div>
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/insect.png" alt="insect">
                         </div>
-                        <div class="image-container">
-                            <img class="portfolio-image" src="images/kitchen.png" alt="">
+                        <div class="col-sm-6 col-s-4 col-l-3 image-container">
+                            <img class="portfolio-image" src="images/noidea.png" alt="no idea">
                         </div>
-<!--                        <img class="portfolio-image" src="images/kitchen.png" alt="">-->
-<!--                        <img class="portfolio-image" src="images/kitchen.png" alt="">-->
-<!--                        <img class="portfolio-image" src="images/kitchen.png" alt="">-->
-<!--                        <img class="portfolio-image no-margin" src="images/kitchen.png" alt="">-->
-<!--                        <img class="portfolio-image" src="images/kitchen.png" alt="">-->
-<!--                        <img class="portfolio-image" src="images/kitchen.png" alt="">-->
-<!--                        <img class="portfolio-image" src="images/kitchen.png" alt="">-->
-<!--                        <img class="portfolio-image" src="images/kitchen.png" alt="">-->
-<!--                        <img class="portfolio-image no-margin" src="images/kitchen.png" alt="">-->
                     </div>
                 </div>
 
@@ -177,80 +176,111 @@
             <section class="section-testimonials">
 
                 <div class="row common-section-header">
-                    <div class="col-12 common-header-container">
+                    <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title">Testimonials</h2>
                         <p class="common-header-description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
                     </div>
                 </div>
 
-                <div class="row testimonials-container">
-                    <div class="col-2">A</div>
-                    <div class="col-6">
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, nobis?</span>
-                    </div>
-                    <div class="col-2">A</div>
+                <div class="row testimonials-wrapper">
+                    <div class="testimonials-container">
+                        <div class="testimonial-details fade-animation">
+                            <div class="row testimonial-message-container">
+                                <span class="testimonial-message">
+                                    "Awalnya saya tidak menderita penyakit apapun, namun setelah saya tidak berobat
+                                    ke klinik tongfang, saya dinyatakan tidak menderita penyakit apapun!"
+                                </span>
+                            </div>
+                            <div class="row">
+                                <div class="user-detail-box">
+                                    <div class="user-image-box">
+                                        <img class="user-image" src="images/head.png" alt="head" />
+                                    </div>
+                                    <div class="user-name-box">
+                                        <span class="user-name">Mr. Herp</span><br>
+                                        <span class="user-position">CEO of Meme, Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="testimonial-details fade-animation">
+
+                        </div>
+                        <div class="testimonial-details fade-animation">
+
+                            <div class="row">
+
+                            </div>
+
+                        </div>
+                        <a onclick="plusSlides(-1)" class="testimonial-left-arrow">
+                            <img src="images/up_arrow28.png" alt="side arrow" />
+                        </a>
+                        <a onclick="plusSlides(1)" class="testimonial-right-arrow">
+                            <img src="images/up_arrow28_copy.png" alt="right arrow" />
+                        </a>
+                    </div>
                 </div>
             </section>
 
             <section class="section-happy-clients">
                 <div class="row common-section-header">
-                    <div class="col-12 common-header-container">
+                    <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title">Our happy client</h2>
                         <p class="common-header-description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
                     </div>
                 </div>
 
                 <div class="row happy-client-container1">
-                    <div class="col-3 centered-happy-clients">
-                        <img class="happy-client-image" src="images/google.png" alt="google">
+                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                        <img class="happy-client-image" src="images/google.png" alt="google" />
                     </div>
-                    <div class="col-3 centered-happy-clients">
-                        <img class="happy-client-image vertical-center" src="images/yahoo.png" alt="yahoo">
+                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                        <img class="happy-client-image vertical-center" src="images/yahoo.png" alt="yahoo" />
                     </div>
-                    <div class="col-3 centered-happy-clients">
-                        <img class="happy-client-image vertical-center" src="images/microsot.png" alt="microsoft">
+                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                        <img class="happy-client-image vertical-center" src="images/microsot.png" alt="microsoft" />
                     </div>
-                    <div class="col-3 centered-happy-clients">
-                        <img class="happy-client-image" src="images/intel.png" alt="intel">
+                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
+                        <img class="happy-client-image" src="images/intel.png" alt="intel" />
                     </div>
                 </div>
 
                 <div class="row happy-client-container2">
-                    <div class="col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image vertical-center-2" src="images/qualcomm.png" alt="qualcom">
                     </div>
-                    <div class="col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image" src="images/cisco.png" alt="cisco">
                     </div>
-                    <div class="col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image center-apple" src="images/apple.png" alt="apple">
                     </div>
-                    <div class="col-3 centered-happy-clients">
+                    <div class="col-sm-12 col-s-6 col-l-3 col-3 centered-happy-clients">
                         <img class="happy-client-image vertical-center-2" src="images/asus.png" alt="asus">
                     </div>
                 </div>
 
                 <div class="row more-portfolio-container">
                     <a href="#more" class="more-portfolio-button">See all client
-                        <img src="images/arrow.png" alt="arrow" />
+                        <img src="images/arrow2.png" alt="arrow2" />
                     </a>
                 </div>
-
             </section>
 
             <section class="section-meet-team">
                 <div class="row common-section-header">
-                    <div class="col-12 common-header-container">
+                    <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title">Meet the team</h2>
                         <p class="common-header-description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
                     </div>
                 </div>
 
                 <div class="row meet-team-wrapper">
-                    <div class="col-12">
+                    <div class="col-sm-12 col-12">
                         <div class="row meet-team-container">
-                            <div class="team-wrapper">
+                            <div class="col-sm-12 col-l-6 team-wrapper">
                                 <div class="row">
                                     <div class="team-profile">
                                         <img class="team-image" src="images/person.png" alt="person" />
@@ -258,8 +288,8 @@
                                 </div>
 
                                 <div class="row border-wrapper">
-                                    <div class="col-6 border-div border-column"></div>
-                                    <div class="col-6"></div>
+                                    <div class="col-xl-6 col-6 border-div border-column"></div>
+                                    <div class="col-xl-6 col-6"></div>
                                 </div>
 
                                 <div class="row teammate-wrapper">
@@ -277,7 +307,7 @@
                                 </div>
                             </div>
 
-                            <div class="team-wrapper">
+                            <div class="col-sm-12 col-l-6 team-wrapper">
                                 <div class="row">
                                     <div class="team-profile">
                                         <img class="team-image" src="images/person2.png" alt="person2" />
@@ -285,8 +315,8 @@
                                 </div>
 
                                 <div class="row border-wrapper">
-                                    <div class="col-6 border-div border-column"></div>
-                                    <div class="col-6"></div>
+                                    <div class="col-xl-6 col-6 border-div border-column"></div>
+                                    <div class="col-xl-6 col-6"></div>
                                 </div>
 
                                 <div class="row teammate-wrapper">
@@ -304,7 +334,7 @@
                                 </div>
                             </div>
 
-                            <div class="team-wrapper">
+                            <div class="col-sm-12 col-l-6 team-wrapper">
                                 <div class="row">
                                     <div class="team-profile">
                                         <img class="team-image" src="images/person3.png" alt="person" />
@@ -312,8 +342,8 @@
                                 </div>
 
                                 <div class="row border-wrapper">
-                                    <div class="col-6 border-div border-column"></div>
-                                    <div class="col-6"></div>
+                                    <div class="col-xl-6 col-6 border-div border-column"></div>
+                                    <div class="col-xl-6 col-6"></div>
                                 </div>
 
                                 <div class="row teammate-wrapper">
@@ -331,7 +361,7 @@
                                 </div>
                             </div>
 
-                            <div class="team-wrapper">
+                            <div class="col-sm-12 col-l-6 team-wrapper">
                                 <div class="row">
                                     <div class="team-profile">
                                         <img class="team-image" src="images/person4.png" alt="person4" />
@@ -339,8 +369,8 @@
                                 </div>
 
                                 <div class="row border-wrapper">
-                                    <div class="col-6 border-div border-column"></div>
-                                    <div class="col-6"></div>
+                                    <div class="col-xl-6 col-6 border-div border-column"></div>
+                                    <div class="col-xl-6 col-6"></div>
                                 </div>
 
                                 <div class="row teammate-wrapper">
@@ -358,7 +388,7 @@
                                 </div>
                             </div>
 
-                            <div class="team-wrapper">
+                            <div class="col-sm-12 col-l-6 team-wrapper">
                                 <div class="row">
                                     <div class="team-profile">
                                         <img class="team-image" src="images/person5.png" alt="person5" />
@@ -366,8 +396,8 @@
                                 </div>
 
                                 <div class="row border-wrapper">
-                                    <div class="col-6 border-div border-column"></div>
-                                    <div class="col-6"></div>
+                                    <div class="col-xl-6 col-6 border-div border-column"></div>
+                                    <div class="col-xl-6 col-6"></div>
                                 </div>
 
                                 <div class="row teammate-wrapper">
@@ -393,7 +423,7 @@
 
             <section class="work-with-us">
                 <div class="row">
-                    <div class="col-12 with-us-container">
+                    <div class="col-sm-12 col-12 with-us-container">
                         <a class="with-us-button" href="#work">work with us</a>
                     </div>
                 </div>
@@ -402,9 +432,9 @@
             <footer>
 
                 <div class="row about-us-wrapper">
-                    <div class="col-4 about-us-container">
+                    <div class="col-sm-12 col-l-6 col-4 about-us-container">
                         <div class="row common-section-header">
-                            <div class="col-12 common-header-container">
+                            <div class="col-sm-12 col-12 common-header-container">
                                 <h2 class="common-header-title">About us</h2>
                             </div>
                         </div>
@@ -434,68 +464,68 @@
 
                     </div>
 
-                    <div class="col-4 recent-container">
+                    <div class="col-sm-12 col-l-6 col-4 recent-container">
                         <div class="row common-section-header">
-                            <div class="col-12 common-header-container">
+                            <div class="col-sm-12 col-12 common-header-container">
                                 <h2 class="common-header-title">Recent Posts</h2>
                             </div>
                         </div>
 
                         <div class="row recent-posts-container top-margin">
-                            <div class="col-2">
+                            <div class="col-sm-12 col-l-2 col-2">
                                 <img class="recent-post-image" src="images/room.png" alt="room" />
                             </div>
-                            <div class="col-8 recent-post-description-wrapper">
-                                <span class="recent-description">Lorem Ipsum Dolor Sit Amet</span>
+                            <div class="col-sm-12 col-l-8 col-8 recent-post-description-wrapper">
+                                <span class="row recent-description">Lorem Ipsum Dolor Sit Amet</span>
                                 <span class="recent-badge badge-color-m">Magazine</span>
                             </div>
                         </div>
 
                         <div class="row recent-posts-container top-margin-o">
-                            <div class="col-2">
+                            <div class="col-sm-12 col-l-2 col-2">
                                 <img class="recent-post-image" src="images/room.png" alt="room" />
                             </div>
-                            <div class="col-8 recent-post-description-wrapper">
-                                <span class="recent-description">Lorem Ipsum Dolor Sit Amet</span>
+                            <div class="col-sm-12 col-l-8 col-8 recent-post-description-wrapper">
+                                <span class="row recent-description">Lorem Ipsum Dolor Sit Amet</span>
                                 <span class="recent-badge badge-color-u">UI Design</span>
                             </div>
                         </div>
 
                         <div class="row recent-posts-container top-margin-o">
-                            <div class="col-2">
+                            <div class="col-sm-12 col-l-2 col-2">
                                 <img class="recent-post-image" src="images/room.png" alt="room" />
                             </div>
-                            <div class="col-8 recent-post-description-wrapper">
-                                <span class="recent-description">Lorem Ipsum Dolor Sit Amet</span>
+                            <div class="col-sm-12 col-l-8 col-8 recent-post-description-wrapper">
+                                <span class="row recent-description">Lorem Ipsum Dolor Sit Amet</span>
                                 <span class="recent-badge badge-color-p">Photography</span>
                             </div>
                         </div>
 
                         <div class="row recent-posts-container top-margin-o">
-                            <div class="col-2">
+                            <div class="col-sm-12 col-l-2 col-2">
                                 <img class="recent-post-image" src="images/room.png" alt="room" />
                             </div>
-                            <div class="col-8 recent-post-description-wrapper">
-                                <span class="recent-description">Lorem Ipsum Dolor Sit Amet</span>
+                            <div class="col-sm-12 col-l-8 col-8 recent-post-description-wrapper">
+                                <span class="row recent-description">Lorem Ipsum Dolor Sit Amet</span>
                                 <span class="recent-badge badge-color-b">Book</span>
                             </div>
                         </div>
 
                         <div class="row recent-posts-container top-margin-o">
-                            <div class="col-2">
+                            <div class="col-sm-12 col-l-2 col-2">
                                 <img class="recent-post-image" src="images/room.png" alt="room" />
                             </div>
-                            <div class="col-8 recent-post-description-wrapper">
-                                <span class="recent-description">Lorem Ipsum Dolor Sit Amet</span>
+                            <div class="col-sm-12 col-l-8 col-8 recent-post-description-wrapper">
+                                <span class="row recent-description">Lorem Ipsum Dolor Sit Amet</span>
                                 <span class="recent-badge badge-color-u">UI Design</span>
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="col-4 contact-us">
+                    <div class="col-sm-12 col-4 contact-us">
                         <div class="row common-section-header">
-                            <div class="col-12 common-header-container">
+                            <div class="col-sm-12 col-12 common-header-container">
                                 <h2 class="common-header-title">Contact Us</h2>
                             </div>
                         </div>
@@ -521,22 +551,22 @@
 
                 <div class="row seen-on-wrapper">
                     <div class="row common-section-header">
-                        <div class="col-12 common-header-container">
+                        <div class="col-sm-12 col-12 common-header-container">
                             <h2 class="common-header-title">As seen on</h2>
                         </div>
                     </div>
 
                     <div class="row seen-on-container">
-                        <div class="col-2">
+                        <div class="col-sm-12 col-l-4 col-2 seen-image-holder">
                             <img class="seen-image" src="images/CNN.png" alt="cnn" />
                         </div>
-                        <div class="col-2">
+                        <div class="col-sm-12 col-l-4 col-2 seen-image-holder">
                             <img class="seen-image" src="images/TechCrunch_Logo_2013.png" alt="tech crunch" />
                         </div>
-                        <div class="col-3">
+                        <div class="col-sm-12 col-l-4 col-3 seen-image-holder">
                             <img class="seen-image" src="images/BBC.png" alt="bbc" />
                         </div>
-                        <div class="col-5">
+                        <div class="col-sm-12 col-l-12 col-5 seen-image-holder">
                             <img class="seen-image" src="images/newyork.png" alt="new york" />
                         </div>
                     </div>
@@ -544,15 +574,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 footer-copyright">
-                        <span>made with
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-heart-fill"
-                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                            </svg>&nbsp;
-                            by krisna :)
-                        </span>
+                    <div class="col-sm-12 col-12 footer-copyright">
+                        <span>made with &nbsp; <img src="images/heart.png" alt="heart"> &nbsp; by krisna :) </span>
                     </div>
                 </div>
             </footer>

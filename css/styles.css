@@ -27,7 +27,8 @@
 .navigation-link:hover {
     border-top: 5px solid #54d154;
     padding-top: 5px;
-    font-weight: 700;
+    /*font-weight: bold;*/
+    /*font-weight: 700;*/
 }
 
 .navigation-title {
@@ -36,7 +37,28 @@
 
 .navigation-search {
     float: right;
-    padding: 4px 0 4px 0;
+    padding: 4px 0 4px 10px;
+    border-radius: 50px;
+    /*max-width: 100%;*/
+    outline: none;
+    border: none;
+}
+
+.search-above-input {
+    position: absolute;
+    right: 0;
+    margin: 5px 9px 0 0;
+}
+
+.hamburger {
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    color: #FFFFFF;
+}
+
+.hamburger:hover {
+    color: green;
 }
 
 /* Middle Navigation Section */
@@ -139,8 +161,7 @@
 
 
 /* TESTIMONIALS */
-
-
+/* ITS CODE ON SEPARATE FILE */
 
 
 /*HAPPY CLIENTS*/
@@ -152,12 +173,13 @@
 
 .vertical-center {
     /*line-height: 53px;*/
-    margin-top: 8px;
+    margin-top: 20px;
 }
 
 .vertical-center-2 {
     margin-top: 25px;
 }
+
 
 
 /*.center-apple {*/
@@ -198,6 +220,10 @@
     display: block;
 }
 
+.seen-image-holder {
+    margin-top: 30px;
+}
+
 /* FOOTER ABOUT */
 .pills-on-footer {
     margin-top: 30px;
@@ -206,6 +232,8 @@
 /*FOOTER RECENT POSTS*/
 .recent-post-image {
     max-width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 .recent-description {
