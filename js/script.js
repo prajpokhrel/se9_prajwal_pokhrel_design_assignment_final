@@ -1,10 +1,10 @@
 // Navigation for small devices
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
+function open_navigation() {
+    document.getElementById("overlay-nav").style.height = "100%";
 }
 
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
+function close_navigation() {
+    document.getElementById("overlay-nav").style.height = "0%";
 }
 
 
@@ -27,5 +27,3 @@ function nextTestimonial(n) {
     testimonialContainer[testimonialIndex-1].style.display = "block";
 }
 
-
-// Navigation search remove

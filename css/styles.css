@@ -4,13 +4,10 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: red;*/
 }
 
 .navigation-item {
     float: left;
-    /*margin-bottom: 7px;*/
-    /*Font size should be on rem/em*/
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #ffffff;
@@ -19,19 +16,19 @@
 .navigation-link {
     padding: 10px 0 16px 0;
     margin-right: 16px;
-    font-size: 16px;
+    font-size: 14px;
     display: block;
     color: #FFFFFF;
     font-weight: 400;
     text-align: center;
 }
 
-.navigation-link:hover {
+
+.navigation-link:hover, .active {
     border-top: 5px solid #54d154;
     padding-top: 5px;
-    /*font-weight: bold;*/
-    /*font-weight: 700;*/
 }
+
 
 .navigation-title {
     font-size: 24px;
@@ -41,7 +38,6 @@
     float: right;
     padding: 4px 0 4px 10px;
     border-radius: 50px;
-    /*max-width: 100%;*/
     opacity: 0.8;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -53,16 +49,20 @@
     position: absolute;
     right: 0;
     margin: 5px 9px 0 0;
+    z-index: 1;
 }
 
 .hamburger {
-    font-size: 20px;
-    cursor: pointer;
+    font-size: 30px;
     color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    margin-top: 0;
 }
 
-.hamburger:hover {
-    color: green;
+.title-logo {
+    margin-top: 10px;
 }
 
 /* Middle Navigation Section */
@@ -86,14 +86,18 @@
 }
 
 .bottom-button {
-    padding: 6px 15px 7px 10px;
+    padding: 5px 15px 5px 10px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: bold;
     opacity: 0.7;
     background-color: #FFFFFF;
     border-radius: 50px;
     color: #111111;
     font-family: 'Montserrat', sans-serif;
+}
+
+.scroll-down-arrow  {
+    margin-left: 5px;
 }
 
 /* Services Section */
@@ -106,15 +110,12 @@
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: #828181;
-    /*margin-bottom: 13px;*/
-    /*float: left;*/
-    /*clear: left;*/
 }
 
 .common-header-title::after {
     content: "";
     position: absolute;
-    border-top: 2px solid black;
+    border-top: 2px solid #828181;
     left: 48%;
     bottom: 0;
     top: 15px;
@@ -122,7 +123,6 @@
     height: 0;
     margin-top: 15px;
     background-color: #828181;
-    /*margin-bottom: 10px;*/
 }
 
 .common-header-description {
@@ -157,7 +157,6 @@
     border-radius: 50px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    /*background-color: red;*/
 }
 
 /* PORTFOLIO SECTION */
@@ -169,18 +168,20 @@
     color: #207b20;
 }
 
+.portfolio-specific1::after {
+    border-top: 2px solid #207b20;
+}
+
 .group-button {
     float: left;
     cursor: pointer;
-    padding: 5px 17px;
+    padding: 5px 5px;
     border: 1px solid #2b9b2b;
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     background-color: #FFFFFF;
-    font-size: 16px;
+    font-size: 12px;
     color: #2b9b2b;
-    cursor: pointer;
-    /*border-radius: 50px;*/
 }
 
 .grp-btn-active {
@@ -197,10 +198,10 @@
     border-bottom-left-radius: 50px;
 }
 
- .round-border1 {
-     border-top-right-radius: 50px;
-     border-bottom-right-radius: 50px;
- }
+.round-border1 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 
 .group-button:hover {
     background-color: #2b9b2b;
@@ -209,7 +210,6 @@
 
 .portfolio-image {
     max-width: 100%;
-    /*margin: 0 15px;*/
     margin: 0 auto;
     display: block;
 
@@ -221,7 +221,6 @@
 
 
 .more-portfolio-button {
-    /*font-size: 16px;*/
     padding: 10px 15px;
     background-color: #2b9b2b;
     color: #FFFFFF;
@@ -230,7 +229,6 @@
     border-radius: 50px;
     cursor: pointer;
 }
-
 
 /* TESTIMONIALS */
 /* ITS CODE ON SEPARATE FILE */
@@ -243,7 +241,6 @@
 }
 
 .vertical-center {
-    /*line-height: 53px;*/
     margin-top: 20px;
 }
 
@@ -253,7 +250,6 @@
 
 
 .more-clients-button {
-    /*font-size: 16px;*/
     padding: 12px 32px;
     background-color: #dddcdc;
     color: #a59d9d;
@@ -266,11 +262,6 @@
 .arrow2 {
     margin-left: 20px;
 }
-
-
-/*.center-apple {*/
-/*    margin-left: 40px;*/
-/*}*/
 
 /*MEET THE TEAM*/
 .border-column {
@@ -289,8 +280,6 @@
 }
 
 .social-icons {
-    /*float: left;*/
-    /*margin: 0 auto;*/
     cursor: pointer;
 }
 
@@ -308,12 +297,6 @@
     box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.1);
     font-size: 19px;
     font-family: 'Montserrat', sans-serif;
-}
-
-.recent-description {
-    font-family: 'Montserrat', sans-serif;
-    color: #cccccc;
-    font-size: 16px;
 }
 
 .contact-address {
@@ -347,7 +330,9 @@
 
 .recent-description {
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #cccccc;
 }
 
 .recent-badge {
@@ -358,7 +343,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/*use psudo selectors*/
+
 .badge-color-m {
     background-color: #54d154;
 }
@@ -390,6 +375,22 @@
 
 .no-border-radius {
     border-radius: 0;
+}
+
+.seen-on-specific {
+    font-weight: bold;
+    color: #101010;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.seen-on-specific::after {
+    border-top: 2px solid #101010;
+}
+
+.footer-specific::after {
+    left: 44%;
+    border-top: 2px solid #dddddd;
 }
 
 .contact-message {

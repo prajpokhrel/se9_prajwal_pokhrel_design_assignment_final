@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
         <!-- CSS Files -->
         <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -22,40 +21,39 @@
 
     <div class="main-wrapper">
         <div class="main-container">
-            <header>
+            <header id="home">
                 <div class="landing-page-container">
                     <!-- TOP NAVIGATION -->
                     <div class="row top-navigation">
-                        <div class="overlay" id="myNav">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <div class="col-s-5 col-l-5 col-xl-5 col-5 navigation-content">
-                                <ul class="navigation-items">
-                                    <li class="navigation-item"><a class="navigation-link" href="#home">Home</a></li>
-                                    <li class="navigation-item"><a class="navigation-link" href="#what">What we do?</a></li>
-                                    <li class="navigation-item"><a class="navigation-link" href="#testimonial">Testimonial</a></li>
-                                    <li class="navigation-item"><a class="navigation-link" href="#contact">Contact Us</a></li>
-                                </ul>
-                            </div>
+                        <div class="col-s-5 col-l-5 col-xl-5 col-5 navigation-content show-hide-navigation">
+                            <ul class="navigation-items">
+                                <li class="navigation-item"><a class="navigation-link active" href="#home">Home</a></li>
+                                <li class="navigation-item"><a class="navigation-link" href="#services">What we do?</a></li>
+                                <li class="navigation-item"><a class="navigation-link" href="#testimonials">Testimonial</a></li>
+                                <li class="navigation-item"><a class="navigation-link" href="#footer">Contact Us</a></li>
+                            </ul>
                         </div>
-
-<!--                        <div class="display-navigation col-s-5 col-l-5 col-xl-5 col-5 navigation-content">-->
-<!--                            <ul class="navigation-items">-->
-<!--                                <li class="navigation-item"><a class="navigation-link" href="#home">Home</a></li>-->
-<!--                                <li class="navigation-item"><a class="navigation-link" href="#what">What we do?</a></li>-->
-<!--                                <li class="navigation-item"><a class="navigation-link" href="#testimonial">Testimonial</a></li>-->
-<!--                                <li class="navigation-item"><a class="navigation-link" href="#contact">Contact Us</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-                        <div class="col-s-2 col-l-2 col-xl-2 col-2 navigation-title-container">
+                        <div class="col-s-4 col-l-4 col-xl-2 col-2 navigation-title-container">
                             <span class="navigation-title">
-                                <img src="images/title.png" alt="title"  />
+                                <img class="title-logo" src="images/title.png" alt="title"  />
+                                <span class="hamburger" onclick="open_navigation()">&#9776;</span>
                             </span>
                         </div>
-                        <div class="col-s-5 col-l-5 col-xl-5 col-5 navigation-search-container">
+                        <div class="col-s-8 col-l-8 col-xl-5 col-5 navigation-search-container">
                             <img class="search-above-input" src="images/mag.png" alt="search" />
                             <input class="navigation-search" type="text" placeholder="Search..." />
                         </div>
-                        <span class="hamburger" onclick="openNav()">&#9776;</span>
+
+                        <!-- FULL SCREEN NAVIGATION OVERLAY -->
+                        <div id="overlay-nav" class="overlay-container">
+                            <a href="javascript:void(0)" class="close-button" onclick="close_navigation()">&times;</a>
+                            <div class="overlay-content">
+                                <a onclick="close_navigation()" class="overlay-link" href="#home">Home</a>
+                                <a onclick="close_navigation()" class="overlay-link" href="#services">What we do?</a>
+                                <a onclick="close_navigation()" class="overlay-link" href="#testimonials">Testimonial</a>
+                                <a onclick="close_navigation()" class="overlay-link" href="#footer">Contact us</a>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- MIDDLE CONTENTS -->
@@ -65,9 +63,8 @@
                             <a href="#work" class="middle-button">Work With Us</a>
                         </div>
                         <div class="col-12 bottom-button-container">
-                            <!-- Button has image too -->
-                            <a href="#scroll" class="bottom-button">
-                                scroll down <img src="images/dropdown.png" alt="dropdown" />
+                            <a href="#services" class="bottom-button">
+                                scroll down <img class="scroll-down-arrow" src="images/dropdown.png" alt="dropdown" />
                             </a>
                         </div>
                     </div>
@@ -75,8 +72,7 @@
                 </div>
             </header>
 
-            <section class="section-services">
-
+            <section id="services" class="section-services">
                 <div class="row common-section-header">
                     <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title">What we do</h2>
@@ -122,10 +118,9 @@
                         </div>
                     </div>
                 </div>
-
             </section>
 
-            <section class="section-portfolio">
+            <section id="portfolio" class="section-portfolio">
                 <div class="row common-section-header">
                     <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title portfolio-specific1">Our Latest Work</h2>
@@ -183,11 +178,9 @@
                         <img src="images/arrow.png" alt="arrow" />
                     </a>
                 </div>
-
             </section>
 
-            <section class="section-testimonials">
-
+            <section id="testimonials" class="section-testimonials">
                 <div class="row common-section-header">
                     <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title">Testimonials</h2>
@@ -264,7 +257,7 @@
                 </div>
             </section>
 
-            <section class="section-happy-clients">
+            <section id="clients" class="section-happy-clients">
                 <div class="row common-section-header">
                     <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title">Our happy client</h2>
@@ -309,7 +302,7 @@
                 </div>
             </section>
 
-            <section class="section-meet-team">
+            <section id="team" class="section-meet-team">
                 <div class="row common-section-header">
                     <div class="col-sm-12 col-12 common-header-container">
                         <h2 class="common-header-title portfolio-specific1">Meet the team</h2>
@@ -460,7 +453,6 @@
                 </div>
             </section>
 
-
             <section class="work-with-us">
                 <div class="row">
                     <div class="col-sm-12 col-12 with-us-container">
@@ -469,7 +461,7 @@
                 </div>
             </section>
 
-            <footer class="footer-wrapper">
+            <footer id="footer" class="footer-wrapper">
                 <div class="row about-us-wrapper">
                     <div class="col-sm-12 col-l-6 col-4 about-us-container">
                         <div class="row common-section-header">
@@ -565,7 +557,7 @@
                     <div class="col-sm-12 col-4 contact-us">
                         <div class="row common-section-header">
                             <div class="col-sm-12 col-12 common-header-container">
-                                <h2 class="common-header-title footer-specific">Contact Us</h2>
+                                <h2 class="common-header-title footer-specific more-specific">Contact Us</h2>
                             </div>
                         </div>
 
@@ -580,13 +572,11 @@
                         <div class="row contact-form">
                             <input class="contact-input top-radius" type="text" placeholder="Your Name.." required="required" />
                             <input class="contact-input no-border-radius" type="email" placeholder="Your Email.." required="required" />
-                            <textarea class="contact-message" name="textarea" id="message" cols="30" rows="10" placeholder="You Message.."></textarea>
+                            <textarea class="contact-message" name="textarea" id="message" cols="30" rows="7" placeholder="You Message.."></textarea>
                             <button class="form-submit-button">SEND</button>
                         </div>
-
                     </div>
                 </div>
-
 
                 <div class="row seen-on-wrapper">
                     <div class="row common-section-header">
@@ -618,10 +608,11 @@
                     </div>
                 </div>
             </footer>
-
         </div>
     </div>
 
-    <script src="js/script.js" type="application/javascript"></script>
+    <script src="js/script.js"></script>
     </body>
 </html>
+
+<!-- THANK YOU :) PRAJWAL POKHREL -->
